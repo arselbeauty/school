@@ -152,7 +152,10 @@ header.solid .hd-hours{color:var(--muted)}
 .rlist div:first-child{border-top:1px solid var(--line)}
 .rlist b{display:block;font-size:17px;font-weight:600}
 .rlist span{color:var(--muted);font-size:15px}
-@media(max-width:980px){.result{grid-template-columns:1fr}}
+.rphoto{margin:26px 0 0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);
+  background:var(--bg2);box-shadow:var(--shadow)}
+.rphoto img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 30%}
+@media(max-width:980px){.result{grid-template-columns:1fr}.rphoto{margin-bottom:8px}}
 
 /* qual list */
 .qgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(24px,4vw,70px);max-width:900px}
@@ -325,10 +328,13 @@ footer .fr{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
         <div class="eyebrow">Что остаётся после курса</div>
         <h2>Не конспект, <em>а профессия</em></h2>
         <p class="lead">Курс заканчивается не последним занятием, а первым клиентом, которого вы принимаете сами.</p>
+        <figure class="rphoto"><img src="learn-1.jpg" alt="Гузель Мутыгулина показывает технику ученице" loading="lazy" onerror="this.closest('figure').remove()"></figure>
       </div>
       <div class="rlist">
-        <div><b>Сертификат школы</b><span>подтверждение обучения, которое можно показать клиенту</span></div>
-        <div><b>Отработанная техника</b><span>руки, которые помнят, а не конспект, который лежит</span></div>
+        <div><b>Диагностика и границы</b><span>заболевания ногтей и кожи: когда работать можно, а когда направить к подологу или дерматологу</span></div>
+        <div><b>Отработанная техника</b><span>руки, которые помнят: форма и опил, чистые синусы, покрытие без отслоек</span></div>
+        <div><b>Материалы и инструмент</b><span>базовые линейки под разные типы ногтей, минимальный стартовый набор, хранение и уход</span></div>
+        <div><b>Твёрдые материалы и дизайн</b><span>укрепление гелем и акригелем, чёткие углы квадрата, френч, градиент, втирка, стемпинг</span></div>
         <div><b>Чек-листы и алгоритмы</b><span>порядок работы, чтобы не путаться в этапах</span></div>
         <div><b>Понимание цены</b><span>из чего складывается стоимость и как её не занижать</span></div>
       </div>
