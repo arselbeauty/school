@@ -179,9 +179,11 @@ header.solid .hd-hours{color:var(--muted)}
 
 /* documents */
 .docs{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.2vw,18px)}
-.docs figure{margin:0;border-radius:var(--radius);overflow:hidden;background:var(--bg2);
-  border:1px solid var(--line);aspect-ratio:3/4}
-.docs img{width:100%;height:100%;object-fit:cover;display:block}
+.docs figure{margin:0;border-radius:var(--radius);overflow:hidden;background:#fff;
+  border:1px solid var(--line);display:flex;flex-direction:column}
+.docs img{width:100%;aspect-ratio:3/4;object-fit:contain;display:block;background:#fff;padding:8px}
+.docs figcaption{margin-top:auto;padding:9px 11px 11px;font-size:12.8px;line-height:1.35;
+  color:var(--muted);border-top:1px solid var(--line);background:var(--bg2)}
 @media(max-width:980px){.docs{grid-template-columns:repeat(2,1fr)}}
 
 
@@ -388,16 +390,25 @@ footer .fr{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
     <div class="sec-head">
       <div class="eyebrow">Документы</div>
       <h2>Дипломы и <em>сертификаты</em></h2>
-      <p class="lead">Подтверждение квалификации преподавателя — то, на что смотрят, когда выбирают, кому платить за обучение. Здесь же дипломы и кубки с чемпионатов по педикюру.</p>
+      <p class="lead">Подтверждение квалификации преподавателя, то, на что смотрят, когда выбирают, кому платить за обучение. Дипломы о переподготовке, обучение у брендов, форумы по подологии и награды с чемпионатов.</p>
     </div>
     <div class="docs">
-      <figure><img src="doc-1.jpg" alt="Диплом" onerror="this.closest('figure').remove()"></figure>
-      <figure><img src="doc-2.jpg" alt="Сертификат" onerror="this.closest('figure').remove()"></figure>
-      <figure><img src="doc-3.jpg" alt="Сертификат" onerror="this.closest('figure').remove()"></figure>
-      <figure><img src="doc-4.jpg" alt="Сертификат" onerror="this.closest('figure').remove()"></figure>
-      <figure><img src="doc-5.jpg" alt="Диплом чемпионата" loading="lazy" onerror="this.closest('figure').remove()"></figure>
-      <figure><img src="doc-6.jpg" alt="Кубок и диплом чемпионата" loading="lazy" onerror="this.closest('figure').remove()"></figure>
-      <figure><img src="doc-7.jpg" alt="Участник VIII Чемпионата России индустрии красоты и моды" loading="lazy" onerror="this.closest('figure').remove()"></figure>
+      <figure><img src="guzel-d.jpg" alt="Гузель Мутыгулина с кубком и дипломом лауреата чемпионата России" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Лауреат VIII Чемпионата России, секция «Педикюр - многогранный труд»</figcaption></figure>
+      <figure><img src="doc-9.jpg" alt="Свидетельство о сетевой форме реализации образовательных программ" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Свидетельство о сетевой форме обучения, «Международная академия профессионального обучения»</figcaption></figure>
+      <figure><img src="guzel-e.jpg" alt="Гузель Мутыгулина с дипломом о профессиональной переподготовке" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Диплом о профессиональной переподготовке: право преподавания</figcaption></figure>
+      <figure><img src="doc-15.jpg" alt="Диплом о профессиональной переподготовке" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Диплом о профессиональной переподготовке по маникюру, педикюру и подологии</figcaption></figure>
+      <figure><img src="doc-8.jpg" alt="Сертификат emi «Nail-инструктор TOP»" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>emi: курс подготовки «Nail-инструктор TOP», offline и online</figcaption></figure>
+      <figure><img src="doc-10.jpg" alt="Сертификат участника XI Форума PODOFEET Professional" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>XI Форум PODOFEET Professional, научно-практическая конференция, Пермь</figcaption></figure>
+      <figure><img src="doc-13.jpg" alt="Сертификат повышения квалификации по подологии" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Повышение квалификации: мозоли, трещины, онихолизис, протезирование</figcaption></figure>
+      <figure><img src="doc-12.jpg" alt="Сертификат ParisNail «Бородавки в практике мастера и подолога»" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>ParisNail: «Бородавки в практике мастера и подолога»</figcaption></figure>
+      <figure><img src="doc-7.jpg" alt="Участник VIII Чемпионата России индустрии красоты и моды" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>VIII Чемпионат России индустрии красоты и моды</figcaption></figure>
+      <figure><img src="doc-6.jpg" alt="Кубок и диплом чемпионата" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Кубок и диплом чемпионата</figcaption></figure>
+      <figure><img src="doc-5.jpg" alt="Гузель Мутыгулина с дипломом чемпионата" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>С дипломом и кубком чемпионата</figcaption></figure>
+      <figure><img src="doc-14.jpg" alt="Диплом и кубок чемпионата «Beautiful Woman»" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Чемпионат «Beautiful Woman», Пермь, 2023: третье место, эксперт</figcaption></figure>
+      <figure><img src="doc-1.jpg" alt="Сертификат «Комбинированный педикюр: аппарат и препараты»" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>Школа идеального маникюра: комбинированный педикюр, аппарат и препараты</figcaption></figure>
+      <figure><img src="doc-2.jpg" alt="Диплом школы ParisNail" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>ParisNail: маникюр и дизайн, диплом школы</figcaption></figure>
+      <figure><img src="doc-3.jpg" alt="Сертификат ParisNail «Гелевое наращивание»" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>ParisNail: гелевое наращивание, салонная и арочная техника</figcaption></figure>
+      <figure><img src="doc-4.jpg" alt="Сертификат LS Nails «Flower Art»" loading="lazy" onerror="this.closest('figure').remove()"><figcaption>LS Nails: Flower Art, практический онлайн-курс</figcaption></figure>
     </div>
   </div>
 </section>
